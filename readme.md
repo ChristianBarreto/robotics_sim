@@ -1,6 +1,9 @@
 # Robotics simulation
 Welcome to my robotics simulation project. Here I will play with MuJoCo, robotics controls python libraries, and AI.
 
+![MuJoCo Simulation image](img.jpg "MuJoCo Simulation")
+
+
 If you want to contribute, just leave a PR.
 
 # How to install and run
