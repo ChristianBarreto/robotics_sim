@@ -11,12 +11,16 @@ def main():
     controller = PositionController(model)
 
     # alvo articular visível
-    controller.q_des[:] = 0.0
-    controller.q_des[0] = 2
-    controller.q_des[1] = -0.5
-    controller.q_des[3] = -1.5
-    controller.q_des[5] = 2
-
+    controller.q_des = [
+ 0.6075,
+ -1.6649,
+ -0.2630,
+ -0.5003,
+ -0.7765,
+ 0.1856,
+ 0.0000,
+0.0000
+]
     with viewer.launch_passive(model, data) as v:
         while v.is_running():
             data.ctrl[:] = controller.compute(data)
